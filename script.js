@@ -1,6 +1,18 @@
 import { menuArray } from "/data.js";
+const foodApp = document.querySelector(".app")
 const mealsSection = document.querySelector(".app-meals")
 const ordersSection = document.querySelector(".app-orders")
+ordersSection.innerHTML = `
+    <div class="orders-container">
+        <p>Your order</p>
+        <div class="orders"></div>
+        <div class="total flex">
+            <p>Total price&colon;</p>
+            <p class="total-price">&dollar;0</p>
+        </div>
+        <button class="btn__order">Complete order</button>
+    </div>
+`
 
 renderMeals()
 function renderMeals() {

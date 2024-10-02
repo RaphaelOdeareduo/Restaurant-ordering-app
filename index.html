@@ -22,16 +22,18 @@
                 </section>
             </main>
             <footer class="app-orders">
-                <div class="orders-container">
-                    <p>Your order</p>
-                    <div class="orders"></div>
-                    <div class="total flex">
-                        <p>Total price&colon;</p>
-                        <p class="total-price">&dollar;0</p>
-                    </div>
-                    <button class="btn__order">Complete order</button>
-                </div>
             </footer>
+            <form>
+                <p>Enter card details</p>
+                <label for="cardholderName">Full name</label>
+                <input required type="text" placeholder="Enter your name" name="cardholderName" id="cardholderName">
+                <label for="cardNumber">Card Number</label>
+                <input required type="text" placeholder="Enter card number" name="cardNumber" id="cardNumber">
+                <label for="cardCVV">CVV</label>
+                <input required type="text" placeholder="Enter CVV" name="cardCVV" id="cardCVV">
+                <button id="submitFormBtn" type="submit">Pay</button>
+            </form>
+            <div id="overlay"></div>
         </div>
         <script type="module" src="script.js"></script>
     </body>
