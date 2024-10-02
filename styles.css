@@ -82,15 +82,21 @@ button {
     padding-top: 40px;
 }
 
-.meal-img:hover {
-    scale: 1.1;
-    filter: drop-shadow(0px 4px rgba(0, 0, 0, 0.3)) ;
+.meal-img {
     transition: all 0.2s;
 }
 
-.meal-name {
+.meal-img:hover {
+    scale: 1.1;
+    filter: drop-shadow(0px 4px rgba(0, 0, 0, 0.3)) ;
+}
+
+.meal-name, .meal-name1 {
     font-size: 1.75rem;
     font-weight: 500;
+}
+
+.meal-name {
     margin-bottom: 10px;
 }
 
@@ -99,7 +105,7 @@ button {
     margin-bottom: 16px;
 }
 
-.meal-price {
+.meal-price, .meal-price1 {
     font-size: 1.45rem;
     font-weight: 500;
 }
@@ -115,4 +121,53 @@ button {
     width: 40px;
     height: 40px;
     margin-left: auto;
+    transition: all 0.2s;
+}
+
+.btn__add-meal:active {
+    transform: translate(0, 3px);
+}
+
+.app-orders {
+    background-color: #fff;
+    padding: 30px 0;
+    font-size: 1.5rem;
+}
+
+.orders-container {
+    opacity: 0;
+}
+
+.app-orders p:first-of-type {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.total {
+    padding: 18px 0;
+    border-top: 2px solid #000;
+}
+
+.total-price {
+    margin-left: auto;
+}
+
+.btn__order {
+    display: block;
+    width: 100%;
+    margin: 20px auto 0;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #16DB99;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.btn__order:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
