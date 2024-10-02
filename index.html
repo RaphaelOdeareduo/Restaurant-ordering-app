@@ -1,9 +1,79 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-       <link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Food ordering app</title>
     </head>
     <body>
-	<script src="index.js"></script>
+        <div class="app">
+            <header class="app-banner">
+                <div class="container">
+                    <h1 class="restaurant-name">Jimmy's Diner</h1>
+                    <p class="restaurant-slogan">The best burgers and pizzas in town.</p>
+                </div>
+            </header>
+            <main>
+                <section class="app-meals">
+                    <div class="meal container flex">
+                        <div class="meal-img-container">
+                            <img class="meal-img" src="images/pizza-img.png" alt="Slice of pizza">
+                        </div>
+                        <div class="meal-name-and-function flex">
+                            <div class="meal-info">
+                                <p class="meal-name">Pizza</p>
+                                <p class="meal-ingredients">pepperoni, mushroom, mozarella</p>
+                                <p class="meal-price">&dollar;14</p>
+                            </div>
+                            <button class="btn__add-meal">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6 icon__add">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>                 
+                            </button>
+                        </div>
+                    </div>
+                    <div class="meal container flex">
+                        <div class="meal-img-container">
+                            <img class="meal-img" src="images/beer-img.png" alt="Glass of beer">
+                        </div>
+                        <div class="meal-name-and-function flex">
+                            <div class="meal-info">
+                                <p class="meal-name">Beer</p>
+                                <p class="meal-ingredients">grain, hops, yeast, water</p>
+                                <p class="meal-price">&dollar;12</p>
+                            </div>
+                            <button class="btn__add-meal">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6 icon__add">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>                 
+                            </button>
+                        </div>
+                    </div>
+                    <div class="meal container flex">
+                        <div class="meal-img-container">
+                            <img class="meal-img" src="images/burger-img.png" alt="Hamburger">
+                        </div>
+                        <div class="meal-name-and-function flex">
+                            <div class="meal-info">
+                                <p class="meal-name">Hamburger</p>
+                                <p class="meal-ingredients">beef, cheese, lettuce</p>
+                                <p class="meal-price">&dollar;12</p>
+                            </div>
+                            <button class="btn__add-meal">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6 icon__add">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>                 
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="app-orders">&nbsp;</footer>
+        </div>
+        <script src="index.js"></script>
     </body>
 </html>
-

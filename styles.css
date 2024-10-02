@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: "Smythe", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a, button {
+    display: inline-block;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.app {
+    width: 600px;
+    margin: 100px auto;
+}
+
+.app-banner {
+    background-image: url("images/header-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+
+    padding: 40px 0;
+}
+
+.restaurant-name {
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 1.3px;
+    margin-bottom: 14px;
+}
+
+.restaurant-slogan {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.app-meals {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.meal {
+    width: 100%;
+    align-items: center;
+    gap: 32px;
+
+    padding: 60px 0;
+    border-bottom: 2px solid #D2D2D2;
+}
+
+.meal:first-of-type {
+    padding-top: 40px;
+}
+
+.meal-img:hover {
+    scale: 1.1;
+    filter: drop-shadow(0px 4px rgba(0, 0, 0, 0.3)) ;
+    transition: all 0.2s;
+}
+
+.meal-name {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.meal-ingredients {
+    color: #8B8B8B;
+    margin-bottom: 16px;
+}
+
+.meal-price {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.meal-name-and-function {
+    width: 100%;
+    align-items: center;
+}
+
+.btn__add-meal {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+}
