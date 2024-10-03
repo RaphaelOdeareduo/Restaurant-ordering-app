@@ -1,8 +1,22 @@
 import { menuArray } from "/data.js";
+let mealsCart = []
 const foodApp = document.querySelector(".app")
 const mealsSection = document.querySelector(".app-meals")
 const ordersSection = document.querySelector(".app-orders")
-let mealsCart = []
+const paymentForm = document.querySelector("form")
+paymentForm.innerHTML = `
+        <p>Enter card details</p>
+        <label for="cardholderName">Name</label>
+        <input required type="text" placeholder="Enter your name" name="cardholderName" id="cardholderName" pattern="[a-zA-Z]{3,12}">
+        
+        <label for="cardNumber">Card Number</label>
+        <input required type="text" placeholder="Enter card number" name="cardNumber" id="cardNumber" pattern="[0-9]{16}">
+        
+        <label for="cardCVV">CVV</label>
+        <input required type="text" placeholder="Enter CVV" name="cardCVV" id="cardCVV" pattern="[0-9]{3}">
+        
+        <button id="submitFormBtn" type="submit">Pay</button>
+`
 ordersSection.innerHTML = `
         <div class="orders-container container">
             <p class="app-orders-heading">Your order</p>
@@ -86,7 +100,6 @@ function calcTotal() {
 
 document.querySelector(".btn__order").addEventListener("click", completeOrder)
 
-const paymentForm = document.querySelector("form")
 
 function completeOrder() {
     paymentForm.style.display = "block"
