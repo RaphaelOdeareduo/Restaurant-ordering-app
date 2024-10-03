@@ -92,7 +92,7 @@ button {
     filter: drop-shadow(0px 4px rgba(0, 0, 0, 0.3)) ;
 }
 
-.meal-name, .meal-name1 {
+.meal-name, .meal-name2 {
     font-size: 1.75rem;
     font-weight: 500;
 }
@@ -106,7 +106,7 @@ button {
     margin-bottom: 16px;
 }
 
-.meal-price, .meal-price1 {
+.meal-price, .meal-price2 {
     font-size: 1.45rem;
     font-weight: 500;
 }
@@ -116,16 +116,15 @@ button {
     align-items: center;
 }
 
-.btn__add-meal {
-    background-color: transparent;
-    border: none;
+.icon__add {
     width: 40px;
     height: 40px;
     margin-left: auto;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
-.btn__add-meal:active {
+.icon__add:active {
     transform: translate(0, 3px);
 }
 
@@ -139,10 +138,25 @@ button {
     visibility: hidden;
 }
 
-.app-orders p:first-of-type {
+.app-orders-heading {
     font-size: 1.75rem;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.meal-list-item {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btn__remove {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    color: #8B8B8B;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    cursor: pointer;
 }
 
 .total {
@@ -150,7 +164,7 @@ button {
     border-top: 2px solid #000;
 }
 
-.total-price {
+.total-price, .meal-price2 {
     margin-left: auto;
 }
 
@@ -186,6 +200,7 @@ form {
     position: absolute;
     inset: 0;
     margin: auto;
+    display: none;
 }
 
 form p {
@@ -226,8 +241,5 @@ input {
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
-}
-
-.display {
     display: none;
 }
